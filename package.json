@@ -1,5 +1,5 @@
 {
-  "name": "rockPaperGameGamelte",
+  "name": "rockPaperGame",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -14,7 +14,9 @@
     "vite": "^6.3.5"
   },
   "dependencies": {
+    "@mateothegreat/svelte5-router": "^2.15.3",
     "@tailwindcss/vite": "^4.1.8",
+    "svelte-spa-router": "^4.0.1",
     "tailwindcss": "^4.1.8"
   }
 }

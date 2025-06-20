@@ -5,6 +5,7 @@
 
   // imported components and UIs
   import ButtonGame from '../ui/ButtonGame.svelte';
+  import {userName} from '../lib/store/Stores'
 
   // props
   export let instructionTxt;
@@ -43,7 +44,7 @@
       
       {#if isResult}
         <div class={`${textWhite} flex items-center justify-center mt-10 text-lg sm:text-2xl font-medium`}>
-          {`You picked`}
+          {`${$userName} picked`}
           <img src = {userImgpick} alt = 'userImgpick' 
             class="w-10 sm:w-12"
           />
