@@ -42,14 +42,14 @@
 
 <form action="" class="py-4 w-full flex flex-col sm:flex-row gap-2 items-center">
 
-  <input type="text" placeholder="Players Name" required bind:this={inputElement} bind:value={inputValue} class="p-2 w-full border-amber-50 border-solid" onkeydown={handleKeydown}>
+  <input type="text" placeholder="Players Name" required bind:this={inputElement} bind:value={inputValue} class="p-2 mb-2 sm:mb-0 w-full border-amber-50 border-solid" onkeydown={handleKeydown}>
 
   {#if isEnable}
-  <a href={href} onclick={btnClick} class="p-3 bg-indigo-500 font-medium">
+  <a href={href} onclick={btnClick} class="p-3 bg-indigo-500 font-medium rounded-lg">
     Play 
   </a>
   {:else}
-  <a href='#/' onclick={(event) => handleClick(event)} class="p-3 bg-indigo-500 font-medium">
+  <a href='#/' onclick={(event) => handleClick(event)} class="p-3 bg-indigo-500 font-medium rounded-lg">
     Play 
   </a>
   {/if}
